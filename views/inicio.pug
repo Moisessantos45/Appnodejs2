@@ -1,0 +1,29 @@
+extends ./layout/index
+block slider
+   .slider
+      h1 Gracias por visitar nuestro sitio
+      em aventura
+
+block contenido
+   main.container.mt-5
+      h2.text-center.mb-5 sobres nosotros
+      .row.mb-5
+         .col-md-6
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis magnam ipsa placeat! Enim placeat ullam suscipit sed eveniet adipisci eius minus, nam fuga cupiditate. Eligendi labore itaque excepturi sed assumenda?
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis magnam ipsa placeat! Enim placeat ullam suscipit sed eveniet adipisci eius minus, nam fuga cupiditate. Eligendi labore itaque excepturi sed assumenda?
+         .col-md-6
+            img(src="/img/inicio_nosotros.jpg" alt="" class="img-fluid")
+      include ./layout/bloques_viajes
+   .descuento
+      .container
+         .row
+            .col-md-6
+               .contenido
+                  h3 5% de Descuento
+                  p.titulo viajes a canada
+                  p.fecha 20 de Marzo de 2023
+                  p.precio $2,500 USD
+   
+   .container
+      h2.mt-5.text-center Comentarios
+      include ./layout/comentarios_inicio
