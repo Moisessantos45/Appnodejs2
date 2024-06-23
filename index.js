@@ -17,7 +17,7 @@ app.set("view engine", "pug")
 app.use((req, res, next) => {
   const year = new Date()
   res.locals.fecha = year.getFullYear()
-  res.locals.nombre = "traducciones";
+  res.locals.nombre = "Agencia de Viajes";
   next()
 })
 

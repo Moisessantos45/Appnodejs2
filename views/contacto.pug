@@ -1,0 +1,64 @@
+doctype html
+html
+    head
+        meta(charset='UTF-8')
+        meta(http-equiv='X-UA-Compatible' content='IE=edge')
+        meta(name='viewport' content='width=device-width, initial-scale=1.0')
+        title Sección de Contacto
+        // Incluye Bootstrap CSS
+        link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+        script(src='https://code.jquery.com/jquery-3.6.3.js')
+        // Incluye Bootstrap JS y dependencias
+        script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js')
+        script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+    body
+        // Navbar
+        nav.navbar.navbar-expand-lg.navbar-light.bg-light
+            a.navbar-brand(href='/') Home
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            nav.mt-5.mt-md-0.nav.justify-content-center.justify-content-md-end
+                a.nav-link(href="/nosotros") Nosotros
+                a.nav-link(href="/comentarios") Comentarios
+                a.nav-link(href="/viajes") Viajes
+                a.nav-link(href="/contacto") Contacto
+
+        // Sección de Contacto
+        section.contact.py-5
+            .container
+                .row
+                    .col-md-6
+                        h2 Contáctanos
+                        form
+                            .form-group
+                                label(for='name') Nombre
+                                input#name.form-control(type='text' placeholder='Tu nombre')
+                            .form-group
+                                label(for='email') Correo Electrónico
+                                input#email.form-control(type='email' placeholder='Tu correo electrónico')
+                            .form-group
+                                label(for='subject') Asunto
+                                input#subject.form-control(type='text' placeholder='Asunto')
+                            .form-group
+                                label(for='message') Mensaje
+                                textarea#message.form-control(rows='5' placeholder='Tu mensaje')
+                            button.btn.btn-primary(type='submit') Enviar
+
+                    .col-md-6
+                        h2 Información de Contacto
+                        p
+                            strong Dirección:
+                            |  123 Calle Principal, Ciudad, País
+                        p
+                            strong Teléfono:
+                            |  (123) 456-7890
+                        p
+                            strong Correo Electrónico:
+                            |  info@ejemplo.com
+                        // Mapa o imagen de la ubicación
+                        iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019858062913!2d144.95563131566705!3d-37.8172079797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xb293ab3e2d2e5c10!2sVictoria%20Harbour%20Promenade%2C%20Docklands%20VIC%203008%2C%20Australia!5e0!3m2!1sen!2sus!4v1623867029246!5m2!1sen!2sus' width='100%' height='300' style='border:0;' allowfullscreen='' loading='lazy')
+
+    // Footer
+    footer.bg-light.py-4
+        .container.text-center
+            p © 2024 Tu Compañía. Todos los derechos reservados.

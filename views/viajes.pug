@@ -1,61 +1,92 @@
 doctype html
-head
-  meta(charset='UTF-8')
-  meta(http-equiv='X-UA-Compatible' content='IE=edge')
-  meta(name='viewport' content='width=device-width, initial-scale=1.0')
-  title HOZUMI-SENSEI TO MATSURI-KUN TO.
-  script(src='https://code.jquery.com/jquery-3.6.3.js')
-//
-  <nav>
-  <a href="index.html"> <img src="img/Marca.png" alt=""></a>
-  </nav>
-  <header>
-  <div class="header-content">
-  </header>
-section.title
-  .line
-  h1 HOZUMI-SENSEI TO MATSURI-KUN TO.
-  .line
-section.ilustracion
-  img(src='img/hozumi1.jpg' alt='')
-  h3 G&eacute;neros: Comedia rom&aacute;ntica, Escolares, Harem, Recuentos de la vida.
-section.minfo
-  table
-    tr
-      th Cr&eacute;ditos: 
-    tr
-      th Autor:
-      td Aya Hazuki
-    tr
-      th Ilustrador:
-      td DSmile
-    tr
-      th Editorial:
-      td Dengeki Bunko
-    tr
-      th Encargados de la Traducci&oacute;n:
-    tr
-      th Traductor del japones al Espa&ntilde;ol:
-      td Defous123
-    tr
-      th Corrector
-      td  
-    tr
-      th Editor de Ilustraciones
-      td Rouni
-    tr
-      th Maquetador de PDF:
-      td ??
-    tr.sinop
-      th(colspan='2') Sinopsis:
-    tr.sinop2
-      td(colspan='2')
-        | El famoso autor de novelas ligeras &laquo;Hozumi&raquo; cay&oacute; en decadencia tras sus &uacute;ltimos a&ntilde;os como escritor y su editora encargada rechaz&oacute; su &uacute;ltima obra, entonces le hizo una propuesta un tanto p&iacute;cara si lograba escribir algo bueno. Un d&iacute;a una estudiante de secundaria llamada &laquo;Matsuri Shirahana&raquo; aparece en su apartamento con su labor de cuidarlo y hacerle las tareas del hogar hasta que pueda inspirarse en escribir una nueva novela. &iexcl;&iexcl;Empez&oacute; la vida diaria entre un novelista virgen y una chica de secundaria!!
-figure.backgraoud
-  img(src='img/hozumi4.jpg' alt='')
-section.volumenes
-
-#disqus_thread
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible' content='IE=edge')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title HOZUMI-SENSEI TO MATSURI-KUN TO.
+    // Incluye Bootstrap CSS
+    link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css')
+    script(src='https://code.jquery.com/jquery-3.6.3.js')
+    // Incluye Bootstrap JS y dependencias
+    script(src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js')
+  body
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light
+      a.navbar-brand(href='index.html')
+        img(src='img/Marca.png' alt='Logo')
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+      nav.mt-5.mt-md-0.nav.justify-content-center.justify-content-md-end
+        a.nav-link(href="/nosotros") Nosotros
+        a.nav-link(href="/comentarios") Comentarios
+        a.nav-link(href="/viajes") Viajes
+        a.nav-link(href="/contacto") Contacto
+    header.bg-primary.text-white.py-5
+      .container
+        .row
+          .col-md-12.text-center
+            h1 HOZUMI-SENSEI TO MATSURI-KUN TO.
+    section.title.text-center.my-4
+      .container
+        .row
+          .col-12
+            h1 HOZUMI-SENSEI TO MATSURI-KUN TO.
+            hr
+    section.ilustracion.text-center.my-4
+      .container
+        .row
+          .col-md-6.offset-md-3
+            img.img-fluid(src='img/hozumi1.jpg' alt='Ilustración de Hozumi')
+            h3 G&eacute;neros: Comedia rom&aacute;ntica, Escolares, Harem, Recuentos de la vida.
+    section.minfo.my-4
+      .container
+        .row
+          .col-md-8.offset-md-2
+            table.table.table-bordered
+              tr
+                th Cr&eacute;ditos: 
+              tr
+                th Autor:
+                td Aya Hazuki
+              tr
+                th Ilustrador:
+                td DSmile
+              tr
+                th Editorial:
+                td Dengeki Bunko
+              tr
+                th Encargados de la Traducci&oacute;n:
+              tr
+                th Traductor del japones al Espa&ntilde;ol:
+                td Defous123
+              tr
+                th Corrector
+                td  
+              tr
+                th Editor de Ilustraciones:
+                td Rouni
+              tr
+                th Maquetador de PDF:
+                td ??
+              tr.sinop
+                th(colspan='2') Sinopsis:
+              tr.sinop2
+                td(colspan='2')
+                  | El famoso autor de novelas ligeras &laquo;Hozumi&raquo; cay&oacute; en decadencia tras sus &uacute;ltimos a&ntilde;os como escritor y su editora encargada rechaz&oacute; su &uacute;ltima obra, entonces le hizo una propuesta un tanto p&iacute;cara si lograba escribir algo bueno. Un d&iacute;a una estudiante de secundaria llamada &laquo;Matsuri Shirahana&raquo; aparece en su apartamento con su labor de cuidarlo y hacerle las tareas del hogar hasta que pueda inspirarse en escribir una nueva novela. &iexcl;&iexcl;Empez&oacute; la vida diaria entre un novelista virgen y una chica de secundaria!!
+    figure.backgraoud.my-4
+      .container
+        .row
+          .col-12.text-center
+            img.img-fluid(src='img/hozumi4.jpg' alt='Fondo de Hozumi')
+    section.volumenes.my-4
+      .container
+        .row
+          .col-12
+            h2 Volúmenes
+            // Aquí podrías añadir una lista o galería de volúmenes
+footer.px-5.py-4.bg-dark.text-white.text-center
+  #disqus_thread
 script.
   /**
   *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
@@ -75,9 +106,6 @@ script.
 noscript
   | Please enable JavaScript to view the 
   a(href='https://disqus.com/?ref_noscript') comments powered by Disqus.
-section.footer
-  p Derechos Reservados
-  p Copyright &copy; 2023 UnderwordLiellaNovels
 script(type='module' src='datos.js')
 script(type='module' src='contenido.js')
 script(type='module' src='visitas.js')
